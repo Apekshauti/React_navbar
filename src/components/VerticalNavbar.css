@@ -1,0 +1,53 @@
+/* VerticalNavbar.css */
+
+.vertical-navbar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: vh;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    transition: width 0.3s; /* Add transition for smooth resizing */
+  }
+  
+  .navbar-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #555;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .vertical-navbar {
+      width: 100%;
+    }
+  
+    /* Optional: Hide navbar header on smaller screens */
+    .navbar-header {
+      display: none;
+    }
+  
+    /* Adjust styling for smaller screens if needed */
+    .navbar-links a {
+      padding: 10px;
+    }
+  }
+  
